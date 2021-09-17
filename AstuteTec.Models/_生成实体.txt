@@ -1,0 +1,14 @@
+Scaffold-dbcontext "Server=121.40.174.31,2433;database=Sheng.SimpleCMS.dev;Integrated Security=false;user id=sa;password=AisiA**^" Microsoft.EntityFrameworkCore.SqlServer -Context Entities -Force
+
+
+EFCore 2.1 用数据库生成实体，无法正确处理关联表，会把关联表单独生成一个实体对象出来
+
+还是用 CodeFirst
+https://cloud.tencent.com/developer/article/1023323
+
+Add-Migration Initialize
+Update-Database
+
+
+https://www.cnblogs.com/lwc1st/p/8966347.html
+Script-Migration
